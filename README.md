@@ -2,7 +2,6 @@
 ![0_dZsiK1TUZuq8xImf](https://github.com/user-attachments/assets/f957b953-75a6-405f-8bcd-4226e3a8af86)
 
 <br>
-
 Terraform module allows you to run Jenkins inside a cluster, providing improved availability and scalability, which can help manage the deployment, scaling, and configuration of Jenkins.
 To use this module, you will need to ensure that your cluster is set up correctly, with shared storage for data persistence and load balancing configured to distribute requests across nodes.
 
