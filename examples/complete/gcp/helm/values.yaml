@@ -1,0 +1,32 @@
+controller:
+  installPlugins:
+    - kubernetes:3845.va_9823979a_744
+    - kubernetes-client-api:6.3.1-206.v76d3b_6b_14db_b
+    - git:5.0.2
+    - configuration-as-code:1625.v27444588cc3d
+    - bitbucket:223.vd12f2bca5430
+    - aws-codecommit-jobs:0.3.0
+    - gitlab-plugin:1.5.35
+    - github
+    - slack:616.v03b_1e98d13dd
+    - prometheus:2.0.11
+    - cloudbees-disk-usage-simple:178.v1a_4d2f6359a_8
+    - workflow-aggregator:590.v6a_d052e5a_a_b_5
+    - dependency-check-jenkins-plugin:5.2.1
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 2.5Gi
+    requests:
+      cpu: 100m
+      memory: 1300Mi
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+            - key: "Addons-Services"
+              operator: In
+              values:
+              - "true"
