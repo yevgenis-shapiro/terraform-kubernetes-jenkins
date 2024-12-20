@@ -9,16 +9,6 @@ To use this module, you will need to ensure that your cluster is set up correctl
 ## Important:
 This module is compatible with EKS, AKS & GKE which is great news for users deploying the module on an AWS, Azure & GCP cloud. Review the module's documentation, meet specific configuration requirements, and test thoroughly after deployment to ensure everything works as expected.
 
-## Supported Versions:
-
-|  Jenkins Helm Chart Version    |     K8s supported version (EKS, AKS & GKE)  |  
-| :-----:                       |         :---                |
-| **4.2.15**                     |    **1.23,1.24,1.25,1.26,1.27**           |
-| **4.5.0**                     |    **1.23,1.24,1.25,1.26,1.27**           |
-| **5.2.2**                     |    **1.23,1.24,1.25,1.26,1.27,1.28,1.29,1.30**           |
-| **5.4.2**                     |    **1.23,1.24,1.25,1.26,1.27,1.28,1.29,1.30**           |
-
-
 ## Usage Example
 
 ```hcl
